@@ -175,29 +175,59 @@ btnEl[4].onclick=function (){
     }
     this.classList.add('active1');
 }
+let counter=0;
 
+    window.addEventListener('scroll',()=>{
 
+        if (window.pageYOffset>2000 && counter<1){
+            console.log(window.pageYOffset)
+            let valueDisplays = document.querySelectorAll(".num");
+            let interval =5000;
 
+            valueDisplays.forEach((valueDisplay) => {
+                let starValue =0;
+                let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+                let duration = Math.floor(interval/endValue);
+                let counter = setInterval(function() {
+                    starValue += 1;
+                    valueDisplay.textContent = starValue;
+                    if (starValue == endValue) {
+                        clearInterval(counter);
+                    }
+                },duration);
 
-window.addEventListener('scroll',()=>{
+            });
+            counter++;
+            console.log(counter);
 
-
-    console.log(window.pageYOffset);
-    if (window.pageYOffset>2800){
-        console.log(window.pageYOffset)
-
-   
-
-        let count=0;
-        console.log(window.pageYOffset)
-        for (let i = 0; i < 43; i++) {
-
-            console.log(count)
-        document.getElementById('forty-two').textContent=window.pageYOffset;
-
-            count++;
         }
-    }});
+
+        console.log(counter);
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
