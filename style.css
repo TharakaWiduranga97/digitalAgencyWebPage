@@ -29,15 +29,13 @@ body {
 
 /*main drop down toggle start*/
 
-
-
-#main-drop-down-header{
+#main-drop-down-header {
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 1000;
 }
 
-.drop-down-main-responsive{
+.drop-down-main-responsive {
   width: 100%;
   height: 60px;
   color: white;
@@ -46,49 +44,43 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
-
 }
-.main-dropdown-list{
+.main-dropdown-list {
   position: absolute;
   top: 60px;
   height: 240px;
   background-color: black;
   width: 100%;
   display: none;
-
 }
-.main-dropdown-list ul{
+.main-dropdown-list ul {
   padding-left: 20px;
-
 }
-.main-dropdown-list li{
- list-style: none;
+.main-dropdown-list li {
+  list-style: none;
   padding-top: 5px;
 }
-.main-dropdown-list a{
+.main-dropdown-list a {
   text-decoration: none;
-
 }
 
-
-.para-main-toggle{
+.para-main-toggle {
   margin: 0 20px;
   padding: 0;
   font-size: 20px;
-  font-weight:800;
-  transition: all 0.5S ;
-
+  font-weight: 800;
+  transition: all 0.5s;
 }
-.menu-n{
+.menu-n {
   font-size: 16px;
   color: #999999;
   font-weight: 500;
-  cursor:pointer;
+  cursor: pointer;
 }
-.active-main{
-  color: #cdb30c!important;
+.active-main {
+  color: #cdb30c !important;
 }
-.main-a{
+.main-a {
   color: #999999;
 }
 
@@ -350,7 +342,7 @@ body {
     opacity: 1;
     right: 20px;
   }
-};
+}
 
 .wrap-1 {
   display: flex;
@@ -490,15 +482,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.de-con .number {
-  font-size: 32px;
-  font-weight: 700;
-  padding-left: 11px;
-  line-height: 1.6;
-}
+
 .de-con .text {
-  font-size: 12px;
-  font-weight: 600;
+  padding-top: 10px;
+
+  font-size: 14px;
+  font-weight: 500;
   padding-left: 11px;
   line-height: 1;
 }
@@ -533,8 +522,7 @@ body {
   width: 100%;
   background-size: cover;
 }
-.professionals {
-}
+
 .skill-name {
   font-size: 14px;
   font-weight: 700;
@@ -1022,8 +1010,8 @@ body {
 }
 .newsletter {
   position: absolute;
-  left: 7.5vw;
-  width: 100%;
+  left: 14vw;
+  width: 70vw;
   height: 250px;
 
   bottom: -100px;
@@ -1134,9 +1122,112 @@ body {
 }
 /*footer element*/
 
+/* carousel-section-start */
+.card .img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.carousel-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #999999;
+  padding: 0 35px;
+}
+
+.carousel .card {
+  height: 442px;
+  list-style: none;
+  background-color: #747171;
+  border-radius: 8px;
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper .carousel {
+  border: 1px solid red;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+}
+.carousel {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+}
+.wrapper .icon {
+  height: 50px;
+  width: 50px;
+  background: rgb(255, 233, 36);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+}
+/* carousel-section-end */
+
+/* swaper-start */
+.swipper-outer {
+  position: relative;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 5px solid transparent;
+}
+
+.swiper {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.swiper-slide {
+  height: 200px;
+  font-size: 18px;
+  background: white;
+  border-radius: 10px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-img {
+  margin: 30px 30px;
+  display: flex;
+}
+.swiper-left {
+  margin-left: 30px;
+}
+.swiper-left .star {
+  color: #cdb30c;
+  font-size: 12px;
+}
+.profile-img img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.swiper-pagination {
+  bottom: 0;
+}
+/* swaper-end */
+
 /*media quary section*/
 @media (max-width: 770px) {
-  .drop-down-main-responsive{
+  .drop-down-main-responsive {
     display: flex;
   }
 
@@ -1222,7 +1313,6 @@ body {
     margin-left: 3px;
     font-size: 12px;
   }
-
 }
 @media (min-width: 990px) and (max-width: 1200px) {
   .slide-col {
